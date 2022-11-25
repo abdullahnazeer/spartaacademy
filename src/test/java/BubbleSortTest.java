@@ -27,4 +27,20 @@ public class BubbleSortTest {
 
     }
 
+    @Test
+    @DisplayName("Given two array of numbers (ints), result returns a merged & sorted array")
+    public void GivenTwoIntsArrays_ReturnsMergedArray() {
+
+        BubbleSort bubbleSort = new BubbleSort();
+
+        int[] array = {23, 1, 7, 12, 8, 2, 10, 31};
+        int[] array2 = {10, 4, 26, 29, 100, 52, 111, 1, 17, 19};
+
+        int[] expectedResult = {1, 1, 2, 4, 7, 8, 10, 10, 12, 17, 19, 23, 26, 29, 31, 52, 100, 111};
+
+        assertArrayEquals(expectedResult, bubbleSort.mergeSortedArrays(array, array2));
+
+    }
+
+
 }
