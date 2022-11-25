@@ -8,17 +8,21 @@ public class BubbleSort {
 
         int arraySize = array.length;
 
-        // outer for loop iterates over each element in the array
-        for (int i = 0; i < arraySize - 1; i++) {
-            // inner loop compares the elements
-            for (int j = 0; j < (arraySize - i - 1); j++) {
-                // elements are compared with their succeeding ones and swapped if they are not in the right order
-                if (array[j] > array[j + 1]) {
-                    int temp = array[j];
-                    array[j] = array[j + 1];
-                    array[j + 1] = temp;
+        if (arraySize != 0) {
+            // outer for loop iterates over each element in the array
+            for (int i = 0; i < arraySize - 1; i++) {
+                // inner loop compares the elements
+                for (int j = 0; j < (arraySize - i - 1); j++) {
+                    // elements are compared with their succeeding ones and swapped if they are not in the right order
+                    if (array[j] > array[j + 1]) {
+                        int temp = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = temp;
+                    }
                 }
             }
+        } else {
+            System.out.println("The array is empty!");
         }
 
         return array;
