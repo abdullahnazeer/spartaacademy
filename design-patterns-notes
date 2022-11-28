@@ -1,0 +1,18 @@
+Design Patterns
+
+A structure that provides typical solutions to common problems in software design.
+
+Each pattern is like a template that you can customize to solve a particular design problem in your code.
+
+- Creational Design Patterns
+
+- Structural Design Patterns
+
+- Behavioural Design Patterns
+
+1. Decorator Pattern
+
+Structural Pattern - Allows us to add new functionalities or responsibilities to existing objects without affecting
+the behaviour of other existing objects.
+
+Sometimes called the 'wrapper pattern'
