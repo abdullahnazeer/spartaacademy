@@ -14,21 +14,16 @@ public class Main {
 //        System.out.println(Arrays.toString(bubbleSort.sortArray(array2)));
 //        System.out.println(Arrays.toString(bubbleSort.mergeSortedArrays(array, array2)));
 
+//        [DECORATOR PATTERN]
 //        ThreeCheesePizzaWrongWay threeCheesePizza = new ThreeCheesePizzaWrongWay();
 //        PepperoniThreeCheesePizzaWrongWay pepperoniThreeCheesePizza = new PepperoniThreeCheesePizzaWrongWay();
-//
 //        System.out.println(threeCheesePizza.prepare());
 //        System.out.println(threeCheesePizza.getPizza());
-//
 //        System.out.println(pepperoniThreeCheesePizza.prepare());
 //        System.out.println(pepperoniThreeCheesePizza.getPizza());
-
-//        [DECORATOR PATTERN]
-
-        Pizza mushroomPepperoni = new MushroomDecorator(new PepperoniDecorator(new PlainPizza()));
-
-        System.out.println(mushroomPepperoni.prepare());
-        System.out.println(mushroomPepperoni.getPrice());
+//        Pizza mushroomPepperoni = new MushroomDecorator(new PepperoniDecorator(new PlainPizza()));
+//        System.out.println(mushroomPepperoni.prepare());
+//        System.out.println(mushroomPepperoni.getPrice());
 
     }
 }
